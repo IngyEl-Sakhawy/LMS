@@ -1,10 +1,10 @@
 # Learning Management System (LMS)
 
 This project is a basic Learning Management System (LMS) built with Laravel. The application includes user registration, course management, and a contact form that sends an email to an admin.
-<div align="center">
-    <iframe width="560" height="315" src="https://youtu.be/Ag7a5rOMHX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
+<div align="center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ag7a5rOMHX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Features
 
@@ -37,7 +37,7 @@ This project is a basic Learning Management System (LMS) built with Laravel. The
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/IngyEl-Sakhawy/LMS.git
     cd your-repository
     ```
 
@@ -80,5 +80,4 @@ This project is a basic Learning Management System (LMS) built with Laravel. The
 
 ## Contact
 
-For issues, questions, or suggestions, please open an issue on the [GitHub repository](https://github.com/your-username/your-repository/issues).
-
+For issues, questions, or suggestions, please open an issue on the [GitHub repository](https://github.com/IngyEl-Sakhawy/LMS.git/issues).
