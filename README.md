@@ -2,6 +2,7 @@
 
 This project is a basic Learning Management System (LMS) built with Laravel. The application includes user registration, course management, and a contact form that sends an email to an admin.
 
+### Demo Video
 
 [![Watch the video](https://img.youtube.com/vi/Ag7a5rOMHX8/0.jpg)](https://www.youtube.com/watch?v=Ag7a5rOMHX8)
 
