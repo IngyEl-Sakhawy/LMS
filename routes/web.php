@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +15,7 @@ use App\Http\Controllers\CourseController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [CourseController::class, 'dashboard'])->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -25,7 +24,15 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     
+    
+    Route::get('/about', function () {
+        return view('components.about');
+    })->name('components.about');
+
     Route::resource('courses', CourseController::class);
+
+    Route::get('contact', [ContactController::class, 'create'])->name('contact.create');
+    Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

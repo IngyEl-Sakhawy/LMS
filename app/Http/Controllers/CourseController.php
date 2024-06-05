@@ -15,6 +15,12 @@ class CourseController extends Controller
         return view('courses.index', compact('courses'));
     }
 
+    public function dashboard()
+    {
+        $courses = Course::all();
+        return view('welcome', compact('courses'));
+    }
+
     public function create()
     {
         return view('courses.create');

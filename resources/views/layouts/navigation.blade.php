@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('components.about') }}">
                         <div style="width: 110px;">
                             <x-application-logo />
                         </div>
@@ -14,8 +14,20 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('courses.index')" :active="request()->routeIs('courses.index')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('courses.create')" :active="request()->routeIs('courses.create')">
+                        {{ __('AddCourse') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('contact.create')" :active="request()->routeIs('contact.create')">
+                        {{ __('SendToAdmin') }}
                     </x-nav-link>
                 </div>
             </div>
